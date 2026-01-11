@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="80.00mm" height="41.52mm" viewBox="0 0 226.7717 117.7042">
+<rect id="bg" x="0.0000" y="0.0000" width="226.7717" height="117.7042" stroke="none" stroke-width="0" fill="#FFFFFF" stroke-linejoin="miter" stroke-linecap="butt" />
+<defs>
+<pattern id="diagHatch" patternUnits="userSpaceOnUse" width="0.8858" height="0.8858" patternTransform="rotate(45)"><line id="diagHatch_line" x1="0.0000" y1="0.0000" x2="0.0000" y2="0.8858" stroke="#000000" stroke-width="0.6pt" /></pattern>
+<pattern id="vertHatch" patternUnits="userSpaceOnUse" width="0.6644" height="0.6644"><line id="vertHatch_line" x1="0.3322" y1="0.0000" x2="0.3322" y2="0.6644" stroke="#000000" stroke-width="0.6pt" /></pattern>
+</defs>
+<line id="axis_y" x1="37.5369" y1="4.8720" x2="37.5369" y2="105.1919" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<line id="axis_x" x1="37.5369" y1="105.1919" x2="165.9818" y2="105.1919" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<line id="tick_120" x1="37.5369" y1="4.8720" x2="39.7515" y2="4.8720" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<text id="tick_label_120" x="35.8760" y="4.8720" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="end" dominant-baseline="middle" fill="#000000">120</text>
+<line id="tick_100" x1="37.5369" y1="21.5920" x2="39.7515" y2="21.5920" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<text id="tick_label_100" x="35.8760" y="21.5920" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="end" dominant-baseline="middle" fill="#000000">100</text>
+<line id="tick_80" x1="37.5369" y1="38.3120" x2="39.7515" y2="38.3120" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<text id="tick_label_80" x="35.8760" y="38.3120" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="end" dominant-baseline="middle" fill="#000000">80</text>
+<line id="tick_60" x1="37.5369" y1="55.0320" x2="39.7515" y2="55.0320" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<text id="tick_label_60" x="35.8760" y="55.0320" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="end" dominant-baseline="middle" fill="#000000">60</text>
+<line id="tick_40" x1="37.5369" y1="71.7520" x2="39.7515" y2="71.7520" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<text id="tick_label_40" x="35.8760" y="71.7520" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="end" dominant-baseline="middle" fill="#000000">40</text>
+<line id="tick_20" x1="37.5369" y1="88.4719" x2="39.7515" y2="88.4719" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<text id="tick_label_20" x="35.8760" y="88.4719" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="end" dominant-baseline="middle" fill="#000000">20</text>
+<line id="tick_0" x1="37.5369" y1="105.1919" x2="39.7515" y2="105.1919" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<text id="tick_label_0" x="35.8760" y="105.1919" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="end" dominant-baseline="middle" fill="#000000">0</text>
+<text id="axis_label_y" x="8.8583" y="55.3642" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="middle" dominant-baseline="middle" fill="#000000" transform="rotate(-90 8.8583 55.3642)">个体百分比(%)</text>
+<rect id="bar_L_seg_omni" x="56.8036" y="21.5920" width="15.7234" height="33.2185" stroke="none" stroke-width="0" fill="url(#diagHatch)" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_L_seg_meat" x="56.8036" y="54.8105" width="15.7234" height="19.4882" stroke="none" stroke-width="0" fill="#B3B3B3" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_L_seg_detrit" x="56.8036" y="74.2987" width="15.7234" height="20.8169" stroke="none" stroke-width="0" fill="#FFFFFF" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_L_seg_herb" x="56.8036" y="95.1156" width="15.7234" height="10.0763" stroke="none" stroke-width="0" fill="url(#vertHatch)" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_L_outline" x="56.8036" y="21.5920" width="15.7234" height="83.5999" stroke="#000000" stroke-width="0.6pt" fill="none" stroke-linejoin="miter" stroke-linecap="butt" />
+<line id="bar_L_boundary_1" x1="56.8036" y1="54.8105" x2="72.5271" y2="54.8105" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<line id="bar_L_boundary_2" x1="56.8036" y1="74.2987" x2="72.5271" y2="74.2987" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<line id="bar_L_boundary_3" x1="56.8036" y1="95.1156" x2="72.5271" y2="95.1156" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<rect id="bar_M_seg_omni" x="84.1535" y="21.5920" width="15.8342" height="28.7894" stroke="none" stroke-width="0" fill="url(#diagHatch)" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_M_seg_meat" x="84.1535" y="50.3814" width="15.8342" height="17.9380" stroke="none" stroke-width="0" fill="#B3B3B3" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_M_seg_detrit" x="84.1535" y="68.3194" width="15.8342" height="30.6718" stroke="none" stroke-width="0" fill="#FFFFFF" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_M_seg_herb" x="84.1535" y="98.9911" width="15.8342" height="6.2008" stroke="none" stroke-width="0" fill="url(#vertHatch)" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_M_outline" x="84.1535" y="21.5920" width="15.8342" height="83.5999" stroke="#000000" stroke-width="0.6pt" fill="none" stroke-linejoin="miter" stroke-linecap="butt" />
+<line id="bar_M_boundary_1" x1="84.1535" y1="50.3814" x2="99.9877" y2="50.3814" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<line id="bar_M_boundary_2" x1="84.1535" y1="68.3194" x2="99.9877" y2="68.3194" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<line id="bar_M_boundary_3" x1="84.1535" y1="98.9911" x2="99.9877" y2="98.9911" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<rect id="bar_S_seg_omni" x="111.6142" y="21.5920" width="15.7234" height="5.3150" stroke="none" stroke-width="0" fill="url(#diagHatch)" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_S_seg_meat" x="111.6142" y="26.9070" width="15.7234" height="10.6299" stroke="none" stroke-width="0" fill="#B3B3B3" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_S_seg_detrit" x="111.6142" y="37.5369" width="15.7234" height="57.2466" stroke="none" stroke-width="0" fill="#FFFFFF" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_S_seg_herb" x="111.6142" y="94.7835" width="15.7234" height="10.4085" stroke="none" stroke-width="0" fill="url(#vertHatch)" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_S_outline" x="111.6142" y="21.5920" width="15.7234" height="83.5999" stroke="#000000" stroke-width="0.6pt" fill="none" stroke-linejoin="miter" stroke-linecap="butt" />
+<line id="bar_S_boundary_1" x1="111.6142" y1="26.9070" x2="127.3376" y2="26.9070" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<line id="bar_S_boundary_2" x1="111.6142" y1="37.5369" x2="127.3376" y2="37.5369" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<line id="bar_S_boundary_3" x1="111.6142" y1="94.7835" x2="127.3376" y2="94.7835" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<rect id="bar_U_seg_omni" x="138.9641" y="21.5920" width="15.8342" height="27.4606" stroke="none" stroke-width="0" fill="url(#diagHatch)" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_U_seg_meat" x="138.9641" y="49.0527" width="15.8342" height="21.4813" stroke="none" stroke-width="0" fill="#B3B3B3" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_U_seg_detrit" x="138.9641" y="70.5340" width="15.8342" height="17.2736" stroke="none" stroke-width="0" fill="#FFFFFF" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_U_seg_herb" x="138.9641" y="87.8076" width="15.8342" height="17.3844" stroke="none" stroke-width="0" fill="url(#vertHatch)" stroke-linejoin="miter" stroke-linecap="butt" />
+<rect id="bar_U_outline" x="138.9641" y="21.5920" width="15.8342" height="83.5999" stroke="#000000" stroke-width="0.6pt" fill="none" stroke-linejoin="miter" stroke-linecap="butt" />
+<line id="bar_U_boundary_1" x1="138.9641" y1="49.0527" x2="154.7982" y2="49.0527" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<line id="bar_U_boundary_2" x1="138.9641" y1="70.5340" x2="154.7982" y2="70.5340" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<line id="bar_U_boundary_3" x1="138.9641" y1="87.8076" x2="154.7982" y2="87.8076" stroke="#000" stroke-width="0.6pt" stroke-linecap="butt" />
+<text id="x_label_L" x="66.1602" y="112.9429" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="middle" dominant-baseline="middle" fill="#000000">L</text>
+<text id="x_label_M" x="92.9564" y="112.9429" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="middle" dominant-baseline="middle" fill="#000000">M</text>
+<text id="x_label_S" x="120.0295" y="112.9429" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="middle" dominant-baseline="middle" fill="#000000">S</text>
+<text id="x_label_U" x="146.6597" y="112.9429" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="middle" dominant-baseline="middle" fill="#000000">U</text>
+<rect id="legend_omni_box" x="168.7500" y="4.9828" width="15.3912" height="9.8548" stroke="#000000" stroke-width="0.6pt" fill="url(#diagHatch)" stroke-linejoin="miter" stroke-linecap="butt" />
+<text id="legend_omni_text" x="186.5773" y="9.9102" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="start" dominant-baseline="middle" fill="#000000">杂食性</text>
+<rect id="legend_meat_box" x="168.7500" y="21.1491" width="15.3912" height="9.8548" stroke="#000000" stroke-width="0.6pt" fill="#B3B3B3" stroke-linejoin="miter" stroke-linecap="butt" />
+<text id="legend_meat_text" x="186.5773" y="26.0765" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="start" dominant-baseline="middle" fill="#000000">肉食性</text>
+<rect id="legend_detrit_box" x="168.7500" y="37.6476" width="15.3912" height="9.7441" stroke="#000000" stroke-width="0.6pt" fill="#FFFFFF" stroke-linejoin="miter" stroke-linecap="butt" />
+<text id="legend_detrit_text" x="186.5773" y="42.5197" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="start" dominant-baseline="middle" fill="#000000">腐食性</text>
+<rect id="legend_herb_box" x="168.7500" y="53.4818" width="15.3912" height="9.7441" stroke="#000000" stroke-width="0.6pt" fill="url(#vertHatch)" stroke-linejoin="miter" stroke-linecap="butt" />
+<text id="legend_herb_text" x="186.5773" y="58.3538" font-family="FZShuSong-Z01, Times New Roman, SimSun, serif" font-size="9pt" text-anchor="start" dominant-baseline="middle" fill="#000000">植食性</text>
+</svg>
+
+
+我是一个绘图员，我的日常工作是将png等格式的图片通过adobe的ai软件绘制成.ai格式的矢量图，每个图都要重复性绘制，我在研发一个程序，可以实现导入png等格式的图，按原样输出结构化svg矢量图。我发给你的是一个示例。你来思考怎么完成最完美，是ai直接生成还是写程序生成。
