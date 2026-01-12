@@ -1,11 +1,53 @@
-# PNG → IR JSON → SVG Pipeline
+# SVG Pipeline & Provider UI
 
-## 功能
-- AI 识别 PNG/JPG → 输出 IR JSON
-- Schema 校验
-- JSON → SVG 渲染
-- SVG → PNG
-- 原图 vs 渲染图 diff 对比
+This project provides a PNG → IR JSON → SVG pipeline plus a front-end settings UI for configuring
+OpenAI-compatible proxy providers (API relay).
 
-## 使用
-1. 安装依赖
+## Layout
+
+- `src/` – pipeline, AI client, validation, rendering
+- `schema/` – JSON schema for IR
+- `prompts/` – AI prompt template
+- `web/` – static settings UI
+- `data/` – input/output folders (if you used `date/`, it is treated as a legacy alias)
+- `config/` – provider configuration (local, not committed)
+
+## Quick start
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+### Configure the provider
+
+Create `config/provider.json` (use `config/provider.sample.json` as a template). **Do not commit
+real API keys.**
+
+```json
+{
+  "base_url": "https://x666.me/v1",
+  "api_key": "sk-REPLACE_WITH_YOUR_KEY",
+  "model": "gemini-3-flash-preview",
+  "timeout_s": 120
+}
+```
+
+### Run the pipeline
+
+```bash
+python scripts/run_pipeline.py
+```
+
+On Windows, make sure you run the command from the project root so `src/` is on the module path.
+
+### Serve the UI
+
+```bash
+python -m http.server 8000 --directory web
+```
+
+Then open `http://localhost:8000`.
+
+The UI lets you export a `provider.json` file and import it locally.
