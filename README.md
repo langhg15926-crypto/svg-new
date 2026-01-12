@@ -40,6 +40,8 @@ real API keys.**
 python scripts/run_pipeline.py
 ```
 
+On Windows, make sure you run the command from the project root so `src/` is on the module path.
+
 ### Serve the UI
 
 ```bash
