@@ -10,6 +10,7 @@ OpenAI-compatible proxy providers (API relay).
 - `prompts/` – AI prompt template
 - `web/` – static settings UI
 - `data/` – input/output folders
+- `config/` – provider configuration (local, not committed)
 
 ## Quick start
 
@@ -19,16 +20,32 @@ source .venv/bin/activate
 pip install -r requirements.txt
 ```
 
-Run the pipeline (requires implementing `call_ai_to_json` credentials via env vars):
+### Configure the provider
+
+Create `config/provider.json` (use `config/provider.sample.json` as a template). **Do not commit
+real API keys.**
+
+```json
+{
+  "base_url": "https://x666.me/v1",
+  "api_key": "sk-REPLACE_WITH_YOUR_KEY",
+  "model": "gemini-3-flash-preview",
+  "timeout_s": 120
+}
+```
+
+### Run the pipeline
 
 ```bash
 python scripts/run_pipeline.py
 ```
 
-Serve the UI:
+### Serve the UI
 
 ```bash
 python -m http.server 8000 --directory web
 ```
 
 Then open `http://localhost:8000`.
+
+The UI lets you export a `provider.json` file and import it locally.

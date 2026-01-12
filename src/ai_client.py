@@ -5,6 +5,8 @@ from typing import Optional
 
 import requests
 
+from .provider_config import load_provider_config
+
 DEFAULT_BASE_URL = "https://api.openai.com/v1"
 DEFAULT_MODEL = "gpt-4o-mini"
 
@@ -20,22 +22,32 @@ def call_ai_to_json(
     model: Optional[str] = None,
     base_url: Optional[str] = None,
     api_key: Optional[str] = None,
-    timeout_s: int = 120,
+    timeout_s: Optional[int] = None,
 ) -> str:
     """
     Calls an OpenAI-compatible chat/completions endpoint.
 
-    Environment variables (optional):
-    - AI_BASE_URL (e.g. https://your-proxy/v1)
-    - AI_API_KEY
-    - AI_MODEL
+    Priority:
+    1) Function arguments
+    2) Environment variables: AI_BASE_URL, AI_API_KEY, AI_MODEL, AI_TIMEOUT_S
+    3) config/provider.json
+    4) Built-in defaults
     """
-    base_url = (base_url or os.getenv("AI_BASE_URL") or DEFAULT_BASE_URL).rstrip("/")
-    api_key = api_key or os.getenv("AI_API_KEY")
-    model = model or os.getenv("AI_MODEL") or DEFAULT_MODEL
+    config = load_provider_config()
+    base_url = (
+        base_url
+        or os.getenv("AI_BASE_URL")
+        or config.get("base_url")
+        or DEFAULT_BASE_URL
+    ).rstrip("/")
+    api_key = api_key or os.getenv("AI_API_KEY") or config.get("api_key")
+    model = model or os.getenv("AI_MODEL") or config.get("model") or DEFAULT_MODEL
+    timeout_s = timeout_s or int(os.getenv("AI_TIMEOUT_S", config.get("timeout_s", 120)))
 
     if not api_key:
-        raise RuntimeError("Missing API key. Set AI_API_KEY or pass api_key.")
+        raise RuntimeError(
+            "Missing API key. Set AI_API_KEY, pass api_key, or configure config/provider.json."
+        )
 
     image_b64 = _load_image_base64(image_path)
 

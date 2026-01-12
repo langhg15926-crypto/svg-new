@@ -24,8 +24,8 @@
           <div class="field">
             <label>API 密钥</label>
             <div class="input-row">
-              <input type="password" placeholder="API 密钥" value="" />
-              <button class="ghost" title="显示">👁️</button>
+              <input id="apiKey" type="password" placeholder="API 密钥" value="" />
+              <button class="ghost" id="toggleKey" title="显示">👁️</button>
               <button class="primary" id="testKey">检测</button>
             </div>
             <p class="hint">多个密钥使用逗号分隔</p>
@@ -34,7 +34,12 @@
           <div class="field">
             <label>API 地址</label>
             <div class="input-row">
-              <input type="text" placeholder="API 地址" value="https://your-proxy/v1" />
+              <input
+                id="baseUrl"
+                type="text"
+                placeholder="API 地址"
+                value="https://x666.me/v1"
+              />
               <button class="ghost" title="设置">⚙️</button>
             </div>
             <p class="hint">预览：/chat/completions</p>
@@ -42,9 +47,22 @@
 
           <div class="field">
             <label>模型</label>
+            <div class="input-row">
+              <input id="model" type="text" placeholder="模型名" value="gemini-3-flash-preview" />
+              <button class="ghost" title="保存" id="saveConfig">保存</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>模型</label>
             <div class="model-row">
               <button class="success">管理</button>
               <button class="outline" id="openModal">添加</button>
+              <button class="outline" id="downloadConfig">导出配置</button>
+              <label class="outline file-label">
+                导入配置
+                <input id="uploadConfig" type="file" accept="application/json" hidden />
+              </label>
             </div>
           </div>
         </div>

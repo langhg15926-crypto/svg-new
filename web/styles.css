@@ -117,6 +117,12 @@ button {
   padding: 10px;
 }
 
+.file-label {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
 .switch {
   position: relative;
   display: inline-block;
