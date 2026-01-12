@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "IRSchema",
+  "type": "object",
+  "required": ["schemaVersion", "chartType", "units", "canvas", "styles", "patterns", "elements"],
+  "properties": {
+    "schemaVersion": {"type": "string"},
+    "chartType": {"type": "string"},
+    "units": {
+      "type": "object",
+      "required": ["position", "size", "stroke", "font"],
+      "properties": {
+        "position": {"const": "pt"},
+        "size": {"const": "pt"},
+        "stroke": {"const": "pt"},
+        "font": {"const": "pt"}
+      }
+    },
+    "canvas": {
+      "type": "object",
+      "required": ["width_mm", "height_mm", "width_pt", "height_pt"],
+      "properties": {
+        "width_mm": {"type": "number"},
+        "height_mm": {"type": "number"},
+        "width_pt": {"type": "number"},
+        "height_pt": {"type": "number"}
+      }
+    },
+    "styles": {
+      "type": "object",
+      "required": ["fontFamily", "defaultFontSizePt", "defaultStrokeWidthPt"],
+      "properties": {
+        "fontFamily": {"type": "string"},
+        "defaultFontSizePt": {"type": "number"},
+        "defaultStrokeWidthPt": {"type": "number"}
+      }
+    },
+    "patterns": {"type": "array"},
+    "elements": {"type": "array"}
+  }
+}

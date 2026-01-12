@@ -1,11 +1,34 @@
-# PNG → IR JSON → SVG Pipeline
+# SVG Pipeline & Provider UI
 
-## 功能
-- AI 识别 PNG/JPG → 输出 IR JSON
-- Schema 校验
-- JSON → SVG 渲染
-- SVG → PNG
-- 原图 vs 渲染图 diff 对比
+This project provides a PNG → IR JSON → SVG pipeline plus a front-end settings UI for configuring
+OpenAI-compatible proxy providers (API relay).
 
-## 使用
-1. 安装依赖
+## Layout
+
+- `src/` – pipeline, AI client, validation, rendering
+- `schema/` – JSON schema for IR
+- `prompts/` – AI prompt template
+- `web/` – static settings UI
+- `data/` – input/output folders
+
+## Quick start
+
+```bash
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+```
+
+Run the pipeline (requires implementing `call_ai_to_json` credentials via env vars):
+
+```bash
+python scripts/run_pipeline.py
+```
+
+Serve the UI:
+
+```bash
+python -m http.server 8000 --directory web
+```
+
+Then open `http://localhost:8000`.
