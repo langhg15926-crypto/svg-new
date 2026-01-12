@@ -1,0 +1,126 @@
+<!doctype html>
+<html lang="zh-CN">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>提供商设置</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="provider-card">
+        <header class="provider-header">
+          <div>
+            <h1>123</h1>
+            <p class="muted">OpenAI 兼容代理</p>
+          </div>
+          <label class="switch">
+            <input type="checkbox" checked />
+            <span class="slider"></span>
+          </label>
+        </header>
+
+        <div class="form-grid">
+          <div class="field">
+            <label>API 密钥</label>
+            <div class="input-row">
+              <input id="apiKey" type="password" placeholder="API 密钥" value="" />
+              <button class="ghost" id="toggleKey" title="显示">👁️</button>
+              <button class="primary" id="testKey">检测</button>
+            </div>
+            <p class="hint">多个密钥使用逗号分隔</p>
+          </div>
+
+          <div class="field">
+            <label>API 地址</label>
+            <div class="input-row">
+              <input
+                id="baseUrl"
+                type="text"
+                placeholder="API 地址"
+                value="https://x666.me/v1"
+              />
+              <button class="ghost" title="设置">⚙️</button>
+            </div>
+            <p class="hint">预览：/chat/completions</p>
+          </div>
+
+          <div class="field">
+            <label>模型</label>
+            <div class="input-row">
+              <input id="model" type="text" placeholder="模型名" value="gemini-3-flash-preview" />
+              <button class="ghost" title="保存" id="saveConfig">保存</button>
+            </div>
+          </div>
+
+          <div class="field">
+            <label>模型</label>
+            <div class="model-row">
+              <button class="success">管理</button>
+              <button class="outline" id="openModal">添加</button>
+              <button class="outline" id="downloadConfig">导出配置</button>
+              <label class="outline file-label">
+                导入配置
+                <input id="uploadConfig" type="file" accept="application/json" hidden />
+              </label>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="modal" id="providerModal" aria-hidden="true">
+        <div class="modal-card">
+          <header>
+            <h2>添加提供商</h2>
+            <button class="ghost" id="closeModal">✕</button>
+          </header>
+          <div class="avatar">P</div>
+          <div class="field">
+            <label>提供商名称</label>
+            <input type="text" placeholder="例如 OpenAI" />
+          </div>
+          <div class="field">
+            <label>提供商类型</label>
+            <div class="select">
+              <span>OpenAI</span>
+              <span>▾</span>
+            </div>
+          </div>
+          <div class="actions">
+            <button class="outline" id="cancelModal">取消</button>
+            <button class="primary">确定</button>
+          </div>
+        </div>
+      </section>
+
+      <section class="modal" id="modelModal" aria-hidden="true">
+        <div class="modal-card wide">
+          <header>
+            <h2>123 模型</h2>
+            <button class="ghost" id="closeModelModal">✕</button>
+          </header>
+          <div class="search-row">
+            <input type="text" placeholder="搜索模型 ID 或名称" />
+            <button class="ghost">≡</button>
+            <button class="ghost">⟳</button>
+          </div>
+          <nav class="tabs">
+            <button class="active">全部</button>
+            <button>推理</button>
+            <button>视觉</button>
+            <button>联网</button>
+            <button>免费</button>
+            <button>嵌入</button>
+            <button>重排</button>
+            <button>工具</button>
+          </nav>
+          <div class="empty">
+            <div class="box"></div>
+            <p>没有模型</p>
+          </div>
+        </div>
+      </section>
+    </main>
+    <script src="app.js"></script>
+  </body>
+</html>

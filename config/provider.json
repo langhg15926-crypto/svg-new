@@ -1,0 +1,6 @@
+{
+  "base_url": "https://x666.me",
+  "api_key": "sk-rbWQdmv0KGvikMijhcoCgsGYnvlQ3IVU8gBpYjIfSsQm8yrO",
+  "model": "gemini-3-flash-preview",
+  "timeout_s": 120
+}
